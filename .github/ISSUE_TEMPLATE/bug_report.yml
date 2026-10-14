@@ -1,0 +1,36 @@
+name: 游玩问题
+description: 游戏无法正常操作、加载、保存或运行（请勿附个人信息）
+title: "[游戏问题] "
+body:
+  - type: markdown
+    attributes:
+      value: "内容和 GitHub 用户名将公开。请勿发布凭证、个人资料、私人存档。诊断文件不会自动上传。"
+  - type: dropdown
+    id: game
+    attributes:
+      label: 游戏
+      options: [平台, 暗兽棋, 幽灵迷局, 迷宫之争, 秘境夺宝, 城市脉络, 连锁花园, 弹弹竞技场, 机关搭档]
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 复现步骤、预期和实际结果
+      placeholder: "打开哪款游戏，操作了什么，期望什么，实际发生什么？"
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: 设备与浏览器
+      placeholder: "机型、系统版本、浏览器版本；不需要设备序列号"
+    validations:
+      required: true
+  - type: input
+    id: build
+    attributes:
+      label: 版本或构建 ID（可选）
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 已检查不含个人信息的诊断或截图（可选）
