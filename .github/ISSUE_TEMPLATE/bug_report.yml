@@ -1,6 +1,7 @@
 name: 游玩问题
 description: 游戏无法正常操作、加载、保存或运行（请勿附个人信息）
 title: "[游戏问题] "
+assignees: [wikty]
 body:
   - type: markdown
     attributes:
